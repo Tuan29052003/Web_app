@@ -8,14 +8,6 @@
 ### Bản tóm tắt
 Hệ thống Quản lý Khách sạn giúp quản lý thông tin khách hàng, đặt phòng, thanh toán, và dịch vụ khách sạn một cách hiệu quả.
 
-## Đối tượng mục tiêu và lợi ích
-
-Hệ thống được thiết kế cho các khách sạn vừa và nhỏ nhằm giúp họ quản lý khách hàng, phòng, và các dịch vụ đi kèm một cách hiệu quả.  
-Lợi ích chính bao gồm:
-- Tối ưu hóa quy trình đặt phòng.
-- Quản lý tài chính.
-- Nâng cao trải nghiệm khách hàng.
-
 ## Bối cảnh và động lực
 
 ### Bối cảnh
@@ -25,13 +17,6 @@ Hiện nay, nhiều khách sạn vẫn quản lý thông tin bằng sổ sách h
 - Quản lý thông tin khách hàng và đặt phòng chưa đồng bộ.
 - Thanh toán chưa tự động hóa.
 - Theo dõi tình trạng phòng không trực quan.
-
-## Giải pháp đề xuất
-
-- Xây dựng một hệ thống phần mềm giúp quản lý khách sạn toàn diện.
-- Cho phép khách hàng đặt phòng trực tuyến.
-- Hỗ trợ thanh toán điện tử và theo dõi doanh thu.
-- Quản lý dịch vụ khách sạn như giặt là, ăn uống, đưa đón.
 
 ## Mục tiêu của dự án
 
