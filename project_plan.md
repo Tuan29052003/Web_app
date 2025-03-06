@@ -148,7 +148,7 @@ Dự án nhằm xây dựng một hệ thống quản lý khách sạn giúp t�
 - Không, mọi thứ đã được đề cập ở trên.
 - Nếu có, cần ghi rõ chi tiết phụ thuộc và kế hoạch xử lý.
 
-## 1010. Kiểm Tra Và Cải Tiến Kế Hoạch
+## 10. Kiểm Tra Và Cải Tiến Kế Hoạch
 - Xem xét bảng đánh giá rủi ro để đảm bảo tính khả thi.
 - Thảo luận với nhóm để cải thiện kế hoạch dự án.
 - Đánh giá lại theo tiêu chuẩn chuyên nghiệp để đảm bảo chất lượng.
