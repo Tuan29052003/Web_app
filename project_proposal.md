@@ -1,14 +1,12 @@
 # Đề xuất dự án: Hệ thống Quản lý Khách sạn
 
-## Thông tin dự án
+## 1. Thông tin dự án
 
 **Dự án**: Hệ thống Quản lý Khách sạn  
 **Khung thời gian của dự án**: 2025/03/06 đến 2025/06/06  
+**Dự án**: Hệ thống Quản lý Khách sạn giúp quản lý thông tin khách hàng, đặt phòng, thanh toán, và dịch vụ khách sạn một cách hiệu quả
 
-### Bản tóm tắt
-Hệ thống Quản lý Khách sạn giúp quản lý thông tin khách hàng, đặt phòng, thanh toán, và dịch vụ khách sạn một cách hiệu quả.
-
-## Bối cảnh và động lực
+## 2.Bối cảnh và động lực
 
 ### Bối cảnh
 Hiện nay, nhiều khách sạn vẫn quản lý thông tin bằng sổ sách hoặc phần mềm cũ kém hiệu quả. Việc đặt phòng và theo dõi tình trạng phòng còn thủ công, gây mất thời gian và dễ xảy ra sai sót.
@@ -18,13 +16,13 @@ Hiện nay, nhiều khách sạn vẫn quản lý thông tin bằng sổ sách h
 - Thanh toán chưa tự động hóa.
 - Theo dõi tình trạng phòng không trực quan.
 
-## Mục tiêu của dự án
+## 3. Mục tiêu
 
 - Xây dựng một nền tảng quản lý khách sạn hiện đại, dễ sử dụng.
 - Hỗ trợ các chức năng quản lý phòng, khách hàng, dịch vụ và thanh toán.
 - Cung cấp báo cáo chi tiết về doanh thu và tình trạng phòng.
 
-## Phạm vi dự án
+## 4. Phạm vi
 
 **Trong phạm vi**:
 - Xây dựng hệ thống đặt phòng trực tuyến.
@@ -36,13 +34,13 @@ Hiện nay, nhiều khách sạn vẫn quản lý thông tin bằng sổ sách h
 - Phát triển ứng dụng di động (sẽ xem xét trong giai đoạn sau).
 - Tích hợp với các hệ thống quản lý khách sạn lớn.
 
-## Sản phẩm giao
+## 5. Sản phẩm giao
 
 - Hệ thống Quản lý Khách sạn hoàn chỉnh.
 - Tài liệu hướng dẫn sử dụng.
 - Báo cáo phân tích và tối ưu hóa hoạt động.
 
-## Rủi ro và phần thưởng
+## 6.Rủi ro và phần thưởng
 
 ### Rủi ro
 - Yêu cầu khách hàng có thể thay đổi trong quá trình phát triển.
