@@ -21,7 +21,6 @@ Dự án nhằm xây dựng một hệ thống quản lý khách sạn giúp t�
 - Quản lý đặt phòng
 - Quản lý khách hàng
 - Quản lý nhân viên
-- Quản lý dịch vụ
 - Hệ thống thanh toán
 - Báo cáo và phân tích
 
