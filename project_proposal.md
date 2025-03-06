@@ -19,7 +19,7 @@ Hiện nay, nhiều khách sạn vẫn quản lý thông tin bằng sổ sách h
 ## 3. Mục tiêu
 
 - Xây dựng một nền tảng quản lý khách sạn hiện đại, dễ sử dụng.
-- Hỗ trợ các chức năng quản lý phòng, khách hàng, dịch vụ và thanh toán.
+- Hỗ trợ các chức năng quản lý phòng, khách hàng, nhân viên, dịch vụ và thanh toán.
 - Cung cấp báo cáo chi tiết về doanh thu và tình trạng phòng.
 
 ## 4. Phạm vi
@@ -27,7 +27,7 @@ Hiện nay, nhiều khách sạn vẫn quản lý thông tin bằng sổ sách h
 **Trong phạm vi**:
 - Xây dựng hệ thống đặt phòng trực tuyến.
 - Hỗ trợ thanh toán điện tử.
-- Quản lý khách hàng và dịch vụ khách sạn.
+- Quản lý nhân viên, khách hàng và dịch vụ khách sạn.
 - Cung cấp báo cáo tài chính và tình trạng phòng.
 
 **Ngoài phạm vi**:
