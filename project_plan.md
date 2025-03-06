@@ -32,11 +32,7 @@ Dự án nhằm xây dựng một hệ thống quản lý khách sạn giúp t�
 
 ## 4. Tóm Tắt Phương Pháp Luận
 
-### Phương Pháp Phát Triển:
-- Sử dụng mô hình **MicroService** để linh hoạt trong quá trình phát triển.
-- Áp dụng phương pháp **Scrum** để quản lý nhóm phát triển.
-- Mỗi sprint kéo dài 2 tuần với các cuộc họp đánh giá.
-
+### Phương Pháp Phát Triển: **Agile Scrum**
 ### Nhân Sự:
 - **Quản lý dự án:** 1 người
 - **Lập trình viên:** 3 người
@@ -44,13 +40,14 @@ Dự án nhằm xây dựng một hệ thống quản lý khách sạn giúp t�
 
 ### Tổ chức nhóm dự án:
 - **Nhóm phát triển:** Gồm lập trình viên backend, frontend, tester
-- **•	Ban kiểm soát thay đổi:** Quản lý dự án, trưởng nhóm kỹ thuật, đại diện khách hàng
+- **Ban kiểm soát thay đổi:** Quản lý dự án, trưởng nhóm kỹ thuật, đại diện khách hàng
 
 ### Công Cụ Sử Dụng:
 - Trang web dự án
-- Hệ thống theo dõi lỗi
+- Công cụ CI/CD
 - Hệ thống kiểm soát phiên bản (**Git**)
 - Hệ thống kiểm tra đơn vị tự động (**JUnit, Selenium**)
+- Hệ thống quản lý cơ sở dữ liệu (**MySQL, PostgreSQL**)
 
 ### Phụ thuộc vào kế hoạch dự án:
 -	Không có xung đột nguồn lực với các dự án khác.
