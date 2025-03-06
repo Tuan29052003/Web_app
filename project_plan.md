@@ -3,8 +3,6 @@
 ## 1. Mục Tiêu Dự Án
 Dự án nhằm xây dựng một hệ thống quản lý khách sạn giúp tối ưu hóa quy trình đặt phòng, thanh toán, quản lý nhân viên và các dịch vụ khách sạn.
 
----
-
 ## 2. Thông Tin Dự Án
 - **Dự án**: Quản lý khách sạn
 - **Khung thời gian của dự án**: `NGÀY BẮT ĐẦU - NGÀY KẾT THÚC`
@@ -17,8 +15,6 @@ Dự án nhằm xây dựng một hệ thống quản lý khách sạn giúp t�
   - Kế hoạch này sẽ được sử dụng để đánh giá và quản lý dự án.
   - Các giả định chính ảnh hưởng đến kế hoạch phải được ghi lại.
   - Kế hoạch dự án sẽ được cập nhật trong suốt vòng đời của dự án.
-
----
 
 ## 3. Tóm Tắt Dự Án
 ### Các thành phần chính:
@@ -33,8 +29,6 @@ Dự án nhằm xây dựng một hệ thống quản lý khách sạn giúp t�
 - **Ngôn ngữ lập trình**: Java
 - **Cơ sở dữ liệu**: MySQL
 - **Framework**: Spring Boot
-
----
 
 ## 4. Tóm Tắt Phương Pháp Luận
 - **Mô hình phát triển**: MicroService
@@ -53,8 +47,6 @@ Dự án nhằm xây dựng một hệ thống quản lý khách sạn giúp t�
 - Hệ thống theo dõi lỗi
 - Hệ thống kiểm soát phiên bản (Git)
 - Hệ thống kiểm tra đơn vị tự động (JUnit, Selenium)
-
----
 
 ## 5. Cấu Trúc Phân Chia Công Việc (WBS) và Ước Tính
 | Bước | Mô Tả | Ước Tính (giờ) |
@@ -90,8 +82,6 @@ Dự án nhằm xây dựng một hệ thống quản lý khách sạn giúp t�
 | 6.1 | Báo cáo đánh giá | 10 |
 | **Tổng cộng** |  | **329** |
 
----
-
 ## 6. Lịch Trình Bản Phát Hành
 | Nhiệm vụ \ Tuần | W-01 | W-02 | W-03 | W-04 | W-05 | W-06 | W-07 | W-08 | W-09 | W-10 | W-11 | W-12 |
 |-----------------|------|------|------|------|------|------|------|------|------|------|------|------|
@@ -99,8 +89,6 @@ Dự án nhằm xây dựng một hệ thống quản lý khách sạn giúp t�
 | 2.1 | 15 | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 3.2 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 4.1.A | 0 | 0 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 |
-
----
 
 ## 7. Quản Lý Rủi Ro
 
@@ -113,13 +101,9 @@ Dự án nhằm xây dựng một hệ thống quản lý khách sạn giúp t�
 - **Khách hàng thay đổi yêu cầu** → Xây dựng quy trình quản lý thay đổi.
 - **Mất tài nguyên (thành viên nghỉ việc, v.v.)** → Nhóm dự phòng và chuyển giao công việc.
 
----
-
 ## 8. Kiểm Tra Và Cải Tiến Kế Hoạch
 - Xem xét bảng đánh giá rủi ro.
 - Thảo luận với nhóm để cải thiện kế hoạch.
 - Đánh giá lại theo tiêu chuẩn chuyên nghiệp.
-
----
 
 📌 *Lưu ý:* Lịch trình và kế hoạch có thể thay đổi dựa trên tình hình thực tế.
