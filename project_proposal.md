@@ -3,7 +3,7 @@
 ## 1. Thông tin dự án
 
 **Dự án**: Hệ thống Quản lý Khách sạn  
-**Khung thời gian của dự án**: 2025/03/06 đến 2025/06/06  
+**Khung thời gian của dự án**: 2025/03/06 - 2025/06/06  
 **Tóm tắt**: Hệ thống Quản lý Khách sạn giúp quản lý thông tin khách hàng, đặt phòng, thanh toán, và dịch vụ khách sạn một cách hiệu quả
 
 ## 2. Bối cảnh và động lực
