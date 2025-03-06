@@ -4,20 +4,20 @@
 Dự án nhằm xây dựng một hệ thống quản lý khách sạn giúp tối ưu hóa quy trình đặt phòng, thanh toán, quản lý nhân viên và các dịch vụ khách sạn.
 
 ## 2. Thông Tin Dự Án
-- **Dự án**: Quản lý khách sạn
-- **Khung thời gian của dự án**: `NGÀY BẮT ĐẦU - NGÀY KẾT THÚC`
-- **Tài liệu đính kèm**:
+- **Dự án:** Quản lý khách sạn
+- **Khung thời gian của dự án:** 03/03/2025 - 03/06/2025
+- **Tài liệu đính kèm:**
   - Kế hoạch > Nhu cầu tài nguyên
   - Đề xuất dự án > Đối tượng mục tiêu và lợi ích
   - Phương pháp phát triển phần mềm
   - Thuật ngữ
-- **Tác động của quy trình**:
+- **Tác động của quy trình:**
   - Kế hoạch này sẽ được sử dụng để đánh giá và quản lý dự án.
   - Các giả định chính ảnh hưởng đến kế hoạch phải được ghi lại.
   - Kế hoạch dự án sẽ được cập nhật trong suốt vòng đời của dự án.
 
 ## 3. Tóm Tắt Dự Án
-### Các thành phần chính:
+### Các Thành Phần Chính:
 - Quản lý đặt phòng
 - Quản lý khách hàng
 - Quản lý dịch vụ
@@ -25,32 +25,45 @@ Dự án nhằm xây dựng một hệ thống quản lý khách sạn giúp t�
 - Báo cáo và phân tích
 - Quản lý nhân viên
 
-### Công nghệ sử dụng:
-- **Ngôn ngữ lập trình**: Java
-- **Cơ sở dữ liệu**: MySQL
-- **Framework**: Spring Boot
+### Công Nghệ Sử Dụng:
+- **Ngôn ngữ lập trình:** Java
+- **Cơ sở dữ liệu:** MySQL
+- **Framework:** Spring Boot
 
 ## 4. Tóm Tắt Phương Pháp Luận
-- **Mô hình phát triển**: MicroService
-- **Phương pháp quản lý**: Scrum
-  - Mỗi sprint kéo dài 2 tuần với các cuộc họp đánh giá.
 
-### Nhân sự:
-| Vị trí | Số lượng |
-|--------|----------|
-| Quản lý dự án | 1 |
-| Lập trình viên | 3 |
-| Kiểm thử viên | 1 |
+### Phương Pháp Phát Triển:
+- Sử dụng mô hình **MicroService** để linh hoạt trong quá trình phát triển.
+- Áp dụng phương pháp **Scrum** để quản lý nhóm phát triển.
+- Mỗi sprint kéo dài 2 tuần với các cuộc họp đánh giá.
 
-### Công cụ sử dụng:
+### Nhân Sự:
+- **Quản lý dự án:** 1 người
+- **Lập trình viên:** 3 người
+- **Kiểm thử viên:** 1 người
+
+### Tổ chức nhóm dự án:
+- **Nhóm phát triển:** Gồm lập trình viên backend, frontend, tester
+- **•	Ban kiểm soát thay đổi:** Quản lý dự án, trưởng nhóm kỹ thuật, đại diện khách hàng
+
+### Công Cụ Sử Dụng:
 - Trang web dự án
 - Hệ thống theo dõi lỗi
-- Hệ thống kiểm soát phiên bản (Git)
-- Hệ thống kiểm tra đơn vị tự động (JUnit, Selenium)
+- Hệ thống kiểm soát phiên bản (**Git**)
+- Hệ thống kiểm tra đơn vị tự động (**JUnit, Selenium**)
+
+### Phụ thuộc vào kế hoạch dự án:
+-	Không có xung đột nguồn lực với các dự án khác.
+-	Không có phụ thuộc vào các dự án khác.
+-	Không có dự án nào khác phụ thuộc vào dự án này.
+
+### Kiểm soát thay đổi:
+- Yêu cầu thay đổi sẽ được theo dõi trong trình theo dõi lỗi.
+-	Sau khi hoàn thành mốc tính năng, không bổ sung tính năng mới vào bản phát hành.
 
 ## 5. Cấu Trúc Phân Chia Công Việc (WBS) và Ước Tính
-| Bước | Mô Tả | Ước Tính (giờ) |
-|------|------------|----------------|
+| Bước  | Mô Tả | Ước Tính (giờ) |
+|---|---|---|
 | 1 | Chuẩn bị |  |
 | 1.1 | Đào tạo lập trình viên | 30 |
 | 2 | Khởi đầu |  |
@@ -82,28 +95,60 @@ Dự án nhằm xây dựng một hệ thống quản lý khách sạn giúp t�
 | 6.1 | Báo cáo đánh giá | 10 |
 | **Tổng cộng** |  | **329** |
 
-## 6. Lịch Trình Bản Phát Hành
+## 6. Các Sản Phẩm Trong Bản Phát Hành Này
+| Tên Sản Phẩm | Mô Tả | Ngày Giao |
+|---|---|---|
+| Hệ thống đặt phòng | Quản lý phòng, khách hàng đặt chỗ | DD/MM/YYYY |
+| Hệ thống quản lý dịch vụ | Quản lý dịch vụ khách sạn | DD/MM/YYYY |
+| Hệ thống thanh toán | Xử lý thanh toán trực tuyến | DD/MM/YYYY |
+
+## 7. Lịch Trình Bản Phát Hành
 | Nhiệm vụ \ Tuần | W-01 | W-02 | W-03 | W-04 | W-05 | W-06 | W-07 | W-08 | W-09 | W-10 | W-11 | W-12 |
-|-----------------|------|------|------|------|------|------|------|------|------|------|------|------|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1.1 | 10 | 10 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2.1 | 15 | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 3.2 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 4.1.A | 0 | 0 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 |
 
-## 7. Quản Lý Rủi Ro
+### Ghi chú:
+- Lịch trình sẽ được cập nhật khi có sự thay đổi.
+- Các bước triển khai có thể thực hiện song song để tối ưu thời gian.
 
-### Danh sách rủi ro chính và biện pháp giảm thiểu:
-- **Xung đột giữa giao diện chất lượng cao và khả năng tùy chỉnh** → Thiết kế linh hoạt.
-- **Khó khăn kỹ thuật** → Đào tạo và kiểm tra thiết kế.
-- **Lịch trình ngắn** → Ưu tiên lõi chức năng.
-- **Hiệu suất hệ thống kém** → Đánh giá thiết kế CSDL.
-- **Hiểu sai yêu cầu** → Giao tiếp thường xuyên với khách hàng.
-- **Khách hàng thay đổi yêu cầu** → Xây dựng quy trình quản lý thay đổi.
-- **Mất tài nguyên (thành viên nghỉ việc, v.v.)** → Nhóm dự phòng và chuyển giao công việc.
+## 8. Quản Lý Rủi Ro
+### Danh Sách Rủi Ro Chính Và Biện Pháp Giảm Thiểu:
+- **Xung đột giữa giao diện chất lượng cao và khả năng tùy chỉnh**
+  - Giải pháp: Thiết kế giao diện linh hoạt và tham khảo ý kiến của nhà thiết kế web có kinh nghiệm trong lĩnh vực này.
+- **Khó khăn kỹ thuật**
+  - Giải pháp: Xác định phạm vi dự án sao cho có đủ thời gian đào tạo và kiểm tra.
+- **Lịch trình ngắn**
+  - Giải pháp: Xác định lõi chức năng quan trọng trước, các tính năng khác triển khai sau.
+- **Hiệu suất hệ thống ảnh hưởng bởi thiết kế cơ sở dữ liệu**
+  - Giải pháp: Đánh giá với DBA giàu kinh nghiệm hoặc thuê chuyên gia tư vấn.
+- **Khách hàng thay đổi yêu cầu**
+  - Giải pháp: Xây dựng quy trình quản lý thay đổi, đánh giá tác động trước khi thực hiện.
 
-## 8. Kiểm Tra Và Cải Tiến Kế Hoạch
-- Xem xét bảng đánh giá rủi ro.
-- Thảo luận với nhóm để cải thiện kế hoạch.
-- Đánh giá lại theo tiêu chuẩn chuyên nghiệp.
+## 8. Phụ Thuộc Vào Kế Hoạch Dự Án
+### Xung đột hoặc cạnh tranh nguồn lực
+- Không, đây là dự án duy nhất đang thực hiện.
+- Nếu có xung đột, chúng tôi đã xác định được mỗi người có thể dành bao nhiêu giờ cho dự án.
 
-📌 *Lưu ý:* Lịch trình và kế hoạch có thể thay đổi dựa trên tình hình thực tế.
+### Bảo trì các phiên bản trước
+- Không, đây là bản phát hành đầu tiên.
+- Nếu có bảo trì, nhóm dự án sẽ dành trung bình 20% thời gian để bảo trì các phiên bản trước.
+
+### Dự án có phụ thuộc vào dự án khác không?
+- Không, đây là dự án độc lập.
+- Nếu có, cần đảm bảo các dự án liên quan hoàn thành đúng tiến độ.
+
+### Dự án khác có phụ thuộc vào dự án này không?
+- Không, dự án không tạo ra thành phần nào dùng trong dự án khác.
+- Nếu có, cần hỗ trợ các nhóm dự án liên quan.
+
+### Có các phụ thuộc quan trọng nào khác không?
+- Không, mọi thứ đã được đề cập ở trên.
+- Nếu có, cần ghi rõ chi tiết phụ thuộc và kế hoạch xử lý.
+
+## 9. Kiểm Tra Và Cải Tiến Kế Hoạch
+- Xem xét bảng đánh giá rủi ro để đảm bảo tính khả thi.
+- Thảo luận với nhóm để cải thiện kế hoạch dự án.
+- Đánh giá lại theo tiêu chuẩn chuyên nghiệp để đảm bảo chất lượng.
