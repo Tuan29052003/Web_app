@@ -6,7 +6,7 @@
 **Khung thời gian của dự án**: 2025/03/06 đến 2025/06/06  
 **Dự án**: Hệ thống Quản lý Khách sạn giúp quản lý thông tin khách hàng, đặt phòng, thanh toán, và dịch vụ khách sạn một cách hiệu quả
 
-## 2.Bối cảnh và động lực
+## 2. Bối cảnh và động lực
 
 ### Bối cảnh
 Hiện nay, nhiều khách sạn vẫn quản lý thông tin bằng sổ sách hoặc phần mềm cũ kém hiệu quả. Việc đặt phòng và theo dõi tình trạng phòng còn thủ công, gây mất thời gian và dễ xảy ra sai sót.
@@ -40,7 +40,7 @@ Hiện nay, nhiều khách sạn vẫn quản lý thông tin bằng sổ sách h
 - Tài liệu hướng dẫn sử dụng.
 - Báo cáo phân tích và tối ưu hóa hoạt động.
 
-## 6.Rủi ro và phần thưởng
+## 6. Rủi ro và phần thưởng
 
 ### Rủi ro
 - Yêu cầu khách hàng có thể thay đổi trong quá trình phát triển.
