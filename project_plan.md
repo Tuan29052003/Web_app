@@ -27,7 +27,7 @@ Dự án nhằm xây dựng một hệ thống quản lý khách sạn giúp t�
 
 ### Công Nghệ Sử Dụng:
 - **Ngôn ngữ lập trình:** Java
-- **Cơ sở dữ liệu:** MySQL
+- **Cơ sở dữ liệu:** MySQL, PostgreSQL
 - **Framework:** Spring Boot
 
 ## 4. Tóm Tắt Phương Pháp Luận
