@@ -127,7 +127,7 @@ Dự án nhằm xây dựng một hệ thống quản lý khách sạn giúp t�
 - **Khách hàng thay đổi yêu cầu**
   - Giải pháp: Xây dựng quy trình quản lý thay đổi, đánh giá tác động trước khi thực hiện.
 
-## 8. Phụ Thuộc Vào Kế Hoạch Dự Án
+## 9. Phụ Thuộc Vào Kế Hoạch Dự Án
 ### Xung đột hoặc cạnh tranh nguồn lực
 - Không, đây là dự án duy nhất đang thực hiện.
 - Nếu có xung đột, chúng tôi đã xác định được mỗi người có thể dành bao nhiêu giờ cho dự án.
@@ -148,7 +148,7 @@ Dự án nhằm xây dựng một hệ thống quản lý khách sạn giúp t�
 - Không, mọi thứ đã được đề cập ở trên.
 - Nếu có, cần ghi rõ chi tiết phụ thuộc và kế hoạch xử lý.
 
-## 9. Kiểm Tra Và Cải Tiến Kế Hoạch
+## 1010. Kiểm Tra Và Cải Tiến Kế Hoạch
 - Xem xét bảng đánh giá rủi ro để đảm bảo tính khả thi.
 - Thảo luận với nhóm để cải thiện kế hoạch dự án.
 - Đánh giá lại theo tiêu chuẩn chuyên nghiệp để đảm bảo chất lượng.
