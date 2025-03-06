@@ -20,10 +20,10 @@ Dự án nhằm xây dựng một hệ thống quản lý khách sạn giúp t�
 ### Các Thành Phần Chính:
 - Quản lý đặt phòng
 - Quản lý khách hàng
+- Quản lý nhân viên
 - Quản lý dịch vụ
 - Hệ thống thanh toán
 - Báo cáo và phân tích
-- Quản lý nhân viên
 
 ### Công Nghệ Sử Dụng:
 - **Ngôn ngữ lập trình:** Java
