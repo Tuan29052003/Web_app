@@ -102,10 +102,13 @@ Dự án nhằm xây dựng một hệ thống quản lý khách sạn giúp t�
 ## 7. Lịch Trình Bản Phát Hành
 | Nhiệm vụ \ Tuần | W-01 | W-02 | W-03 | W-04 | W-05 | W-06 | W-07 | W-08 | W-09 | W-10 | W-11 | W-12 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1.1 | 10 | 10 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 2.1 | 15 | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 3.2 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 1 | 10 | 10 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2 | 15 | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 3 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 4.1.A | 0 | 0 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 |
+| 4.1.B | 0 | 0 | 10 | 10 | 10 | 0 | 10 | 0 | 10 | 0 | 10 | 10 |
+| 4.2 | 0 | 0 | 10 | 10 | 10 | 0 | 10 | 0 | 10 | 0 | 10 | 10 |
+| 5 | 15 | 15 | 0 | 0 | 0 | 0 | 10 | 0 | 0 | 10 | 0 | 0 |
 
 ### Ghi chú:
 - Lịch trình sẽ được cập nhật khi có sự thay đổi.
@@ -125,25 +128,20 @@ Dự án nhằm xây dựng một hệ thống quản lý khách sạn giúp t�
   - Giải pháp: Xây dựng quy trình quản lý thay đổi, đánh giá tác động trước khi thực hiện.
 
 ## 9. Phụ Thuộc Vào Kế Hoạch Dự Án
-### Xung đột hoặc cạnh tranh nguồn lực
-- Không, đây là dự án duy nhất đang thực hiện.
-- Nếu có xung đột, chúng tôi đã xác định được mỗi người có thể dành bao nhiêu giờ cho dự án.
+### Xung đột hoặc cạnh tranh nguồn lực?
+- Có, chúng tôi mỗi người có thể dành 3 giờ cho dự án.
 
-### Bảo trì các phiên bản trước
+### Bảo trì các phiên bản trước?
 - Không, đây là bản phát hành đầu tiên.
-- Nếu có bảo trì, nhóm dự án sẽ dành trung bình 20% thời gian để bảo trì các phiên bản trước.
 
 ### Dự án có phụ thuộc vào dự án khác không?
-- Không, đây là dự án độc lập.
-- Nếu có, cần đảm bảo các dự án liên quan hoàn thành đúng tiến độ.
+- Có, các dự án liên quan được đảm bảo sẽ hoàn thành đúng tiến độ.
 
 ### Dự án khác có phụ thuộc vào dự án này không?
-- Không, dự án không tạo ra thành phần nào dùng trong dự án khác.
-- Nếu có, cần hỗ trợ các nhóm dự án liên quan.
+- Có, cần hỗ trợ các nhóm dự án liên quan.
 
 ### Có các phụ thuộc quan trọng nào khác không?
 - Không, mọi thứ đã được đề cập ở trên.
-- Nếu có, cần ghi rõ chi tiết phụ thuộc và kế hoạch xử lý.
 
 ## 10. Kiểm Tra Và Cải Tiến Kế Hoạch
 - Xem xét bảng đánh giá rủi ro để đảm bảo tính khả thi.
