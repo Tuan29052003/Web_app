@@ -1,4 +1,4 @@
-# Web_app
+# Công Nghệ Lập Trình Hiện Đại
 ## Lịch trình dự án
 
 ### 1. Xây dựng project proposal  
