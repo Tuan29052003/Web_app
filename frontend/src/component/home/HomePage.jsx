@@ -19,13 +19,13 @@ const HomePage = () => {
             {/* HEADER / BANNER ROOM SECTION */}
             <section>
                 <header className="header-banner">
-                    <img src="./assets/images/hotel.webp" alt="Phegon Hotel" className="header-image" />
+                    <img src="./assets/images/hotel.webp" alt="Gia Phú Hotel" className="header-image" />
                     <div className="overlay"></div>
                     <div className="animated-texts overlay-content">
                         <h1>
-                            Welcome to <span className="phegon-color">Phegon Hotel</span>
+                            Welcome to <span className="phegon-color">Gia Phú Hotel nhé homie</span>
                         </h1><br />
-                        <h3>Step into a haven of comfort and care</h3>
+                        <h3>Ở bao thoải mái vui vẻ nha boiz không thoải mái gọi số admin trả tiền</h3>
                     </div>
                 </header>
             </section>
@@ -36,7 +36,7 @@ const HomePage = () => {
 
             <h4><a className="view-rooms-home" href="/rooms">All Rooms</a></h4>
 
-            <h2 className="home-services">Services at <span className="phegon-color">Phegon Hotel</span></h2>
+            <h2 className="home-services">Services at <span className="phegon-color">Gia Phú Hotel</span></h2>
 
             {/* SERVICES SECTION */}
             <section className="service-section"><div className="service-card">

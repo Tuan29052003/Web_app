@@ -14,8 +14,12 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
@@ -36,13 +40,18 @@ public class SecurityConfig {
                 .cors(Customizer.withDefaults())
                 .authorizeHttpRequests(request -> request
                         .requestMatchers("/auth/**", "/rooms/**", "/bookings/**").permitAll()
+                        .requestMatchers("/api/v1/secured").hasRole("ADMIN")
+                        .requestMatchers("/api/v1/public").hasAnyRole("ADMIN", "USER")
                         .anyRequest().authenticated())
+                .formLogin(Customizer.withDefaults())  // Cấu hình form login (nếu cần)
+                .httpBasic(Customizer.withDefaults()) // Cấu hình basic auth (nếu cần)
                 .sessionManagement(manager -> manager.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authenticationProvider(authenticationProvider())
                 .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
-
+    
         return httpSecurity.build();
     }
+    
 
     @Bean
     public AuthenticationProvider authenticationProvider() {
@@ -61,4 +70,17 @@ public class SecurityConfig {
     public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
         return authenticationConfiguration.getAuthenticationManager();
     }
+    // @Bean
+    // public UserDetailsService userDetailsService() {
+    //     UserDetails user = User.withUsername("user")
+    //                            .password(passwordEncoder().encode("test123"))
+    //                            .roles("USER")
+    //                            .build();
+    //     UserDetails admin = User.withUsername("admin")
+    //                             .password(passwordEncoder().encode("test123"))
+    //                             .roles("ADMIN", "USER")
+    //                             .build();
+        
+    //     return new InMemoryUserDetailsManager(user, admin);
+    // }
 }

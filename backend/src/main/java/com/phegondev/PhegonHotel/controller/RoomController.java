@@ -61,6 +61,9 @@ public class RoomController {
         return ResponseEntity.status(response.getStatusCode()).body(response);
     }
 
+    // `@GetMapping` is an annotation in Spring Framework used to map HTTP GET requests to specific
+    // handler methods in a controller class. It specifies that the annotated method should be invoked
+    // when a GET request is sent to the specified endpoint.
     @GetMapping("/all-available-rooms")
     public ResponseEntity<Response> getAvailableRooms() {
         Response response = roomService.getAllAvailableRooms();

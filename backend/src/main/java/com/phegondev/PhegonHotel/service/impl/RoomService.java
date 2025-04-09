@@ -6,7 +6,8 @@ import com.phegondev.PhegonHotel.entity.Room;
 import com.phegondev.PhegonHotel.exception.OurException;
 import com.phegondev.PhegonHotel.repo.BookingRepository;
 import com.phegondev.PhegonHotel.repo.RoomRepository;
-import com.phegondev.PhegonHotel.service.AwsS3Service;
+// import com.phegondev.PhegonHotel.service.AwsS3Service;
+import com.phegondev.PhegonHotel.service.MinioService;
 import com.phegondev.PhegonHotel.service.interfac.IRoomService;
 import com.phegondev.PhegonHotel.utils.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,14 +28,16 @@ public class RoomService implements IRoomService {
     @Autowired
     private BookingRepository bookingRepository;
     @Autowired
-    private AwsS3Service awsS3Service;
+    // private AwsS3Service awsS3Service;
+    private MinioService minioService;
+
 
     @Override
     public Response addNewRoom(MultipartFile photo, String roomType, BigDecimal roomPrice, String description) {
         Response response = new Response();
 
         try {
-            String imageUrl = awsS3Service.saveImageToS3(photo);
+            String imageUrl = minioService.saveImageToMinio(photo);
             Room room = new Room();
             room.setRoomPhotoUrl(imageUrl);
             room.setRoomType(roomType);
@@ -103,7 +106,7 @@ public class RoomService implements IRoomService {
         try {
             String imageUrl = null;
             if (photo != null && !photo.isEmpty()) {
-                imageUrl = awsS3Service.saveImageToS3(photo);
+                imageUrl = minioService.saveImageToMinio(photo);
             }
             Room room = roomRepository.findById(roomId).orElseThrow(() -> new OurException("Room Not Found"));
             if (roomType != null) room.setRoomType(roomType);
