@@ -1,0 +1,149 @@
+version: '3.8'
+services:
+
+
+  # booking-service:
+  #   build:
+  #     context: ./booking-service
+  #   ports:
+  #     - "8081:8081"
+  #   environment:
+  #     - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+  #     - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/booking_db
+  #     - SPRING_DATASOURCE_USERNAME=postgres
+  #     - SPRING_DATASOURCE_PASSWORD=postgres
+  #     - MINIO_ENDPOINT=http://minio:9000
+  #     - MINIO_ACCESS_KEY=admin
+  #     - MINIO_SECRET_KEY=admin123
+  #   depends_on:
+  #     - mysql-booking
+  #     - minio
+  #   networks:
+  #     - phegon-net
+
+  room-service:
+    build:
+      context: ./room-service
+    ports:
+      - "8082:8082"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql-room:3306/room_db
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=root
+      - WT_SECRET=843567893696976453275974432697R634976R738467TR678T34865R6834R8763T478378637664538745673865783678548735687R3
+
+    depends_on:
+      - mysql-room
+    networks:
+      - phegon-net
+
+  auth-service:
+    build:
+      context: ./auth-service
+    ports:
+      - "4040:4040"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql-user:3306/user_db
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=root
+      - WT_SECRET=843567893696976453275974432697R634976R738467TR678T34865R6834R8763T478378637664538745673865783678548735687R3
+    depends_on:
+      - mysql-user
+    networks:
+      - phegon-net
+  nginx:
+    image: nginx:latest
+    ports:
+      - "81:80"
+    volumes:
+      - ./api_gateway/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - mysql-user
+      - mysql-room
+    networks:
+      - phegon-net
+
+
+  
+  # mysql-booking:
+  #   image: mysql:8.0
+  #   container_name: booking_db_mysql
+  #   environment:
+  #     - MYSQL_DATABASE=booking_db
+  #     - MYSQL_ROOT_PASSWORD=postgres
+  #     - MYSQL_USER=postgres
+  #     - MYSQL_PASSWORD=postgres
+  #   ports:
+  #     - "3310:3306"  # Tránh trùng với các service MySQL khác
+  #   volumes:
+  #     - mysql-booking-data:/var/lib/mysql
+  #   networks:
+  #     - phegon-net
+
+
+  # MySQL cho room
+  mysql-room:
+    image: mysql:8.0
+    container_name: room_db
+    environment:
+      - MYSQL_DATABASE=room_db
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - "3309:3306"
+    volumes:
+      - mysql-room-data:/var/lib/mysql
+    networks:
+      - phegon-net
+
+  mysql-user:
+    image: mysql:8.0
+    container_name: user_db_mysql
+    environment:
+      - MYSQL_DATABASE=user_db
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - "3308:3306"
+    volumes:
+      - mysql-user-data:/var/lib/mysql
+    networks:
+      - phegon-net
+
+  # MinIO
+  minio:
+    image: minio/minio
+    command: server /data --console-address ":9001"
+    environment:
+      - MINIO_ACCESS_KEY=admin
+      - MINIO_SECRET_KEY=admin123
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio-data:/data
+    networks:
+      - phegon-net
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "7070:7070"  # hoặc cổng frontend của bạn
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules  # tránh lỗi node_modules bị ghi đè
+    command: npm start
+    environment:
+      - CHOKIDAR_USEPOLLING=true  # Fix hot reload trong container
+    networks:
+      - phegon-net
+    depends_on:
+      - auth-service
+      - room-service
+
+networks:
+  phegon-net:
+
+volumes:
+  minio-data:
+  mysql-room-data:
+  mysql-user-data:
