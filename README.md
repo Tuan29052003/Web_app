@@ -1,4 +1,4 @@
-# MÔN CÔNG NGHỆ LẬP TRÌNH HIỆN ĐẠI
+# MÔN CÔNG NGHỆ LẬP TRÌNH HIỆN ĐẠI & CÔNG NGHỆ PHẦN MỀM
 
 ## I. Tổng quan môn học
 
